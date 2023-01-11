@@ -1,6 +1,4 @@
-*, *::before, *::after {
-    
-}
+
 
 * {
     margin: 0;
@@ -77,6 +75,80 @@ body::-webkit-scrollbar {
 
 .main-carousel {
     grid-area: 2 / 1 / span 1 / span 2;
+    position: relative;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 4rem;
+    height: 4rem;
+    z-index: 1;
+    border-radius: 3rem;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.prev {
+    left: 3%;
+}
+
+.next {
+    right: 3%;
+}
+
+.carousel-button > i {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+}
+
+.carousel-button:hover > i,
+.carousel-button:focus > i {
+    color: rgba(126, 245, 237, 0.8);
+}
+
+.indicator {
+    position: absolute;
+    top: 90%;
+    left: 48%;
+    z-index: 3;
+}
+
+[data-carousel-button-index] {
+    background-color: rgba(255, 255, 255, .5);
+    border: none;
+    outline: none;
+    width: .8rem;
+    height: .8rem;
+    cursor: pointer;
+}
+
+[data-carousel-button-index]:hover,
+[data-carousel-button-index]:focus {
+    background-color: rgba(126, 248, 237, 0.8);
+    padding: .2rem;
+}
+
+.carousel-slide {
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+}
+
+.slide[data-active] {
+    opacity: 1;
 }
 
 /* .main-carousel > img {

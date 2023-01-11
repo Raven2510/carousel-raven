@@ -28,8 +28,29 @@
                     Portfolio
                 </p>
             </div>
-            <div class="main-carousel">
-                <!-- <img src="img/my-work-meme-1.png" alt=""> -->
+            <div class="main-carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button next" data-carousel-button="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <div class="indicator">
+                    <button data-carousel-button-index="0"></button>
+                    <button data-carousel-button-index="1"></button>
+                    <button data-carousel-button-index="2"></button>
+                </div>
+                <ul class="carousel-slide" data-slides>
+                    <li class="slide" data-active>
+                        <img src="img/carousel-meme-1.jpg" alt="Carousel 1">
+                    </li>
+                    <li class="slide">
+                        <img src="img/carousel-meme-2.jpg" alt="Carousel 2">
+                    </li>
+                    <li class="slide">
+                        <img src="img/carousel-meme-3.jpg" alt="Carousel 3">
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="about">
