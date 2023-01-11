@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 2fr);
+    grid-template-rows: 900px;
     gap: 5rem;
     padding: 3rem;
 }
@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
     width: auto;
     display: grid;
     grid-template-columns: repeat(2, 6fr);
-    grid-template-rows: 4fr 8fr;
+    grid-template-rows: 300px 500px;
     gap: 2rem;
 }
 
@@ -80,7 +80,7 @@ body::-webkit-scrollbar {
 
 .carousel-button {
     position: absolute;
-    top: 35%;
+    top: 42%;
     cursor: pointer;
     border: none;
     background-color: rgba(0, 0, 0, 0.3);
